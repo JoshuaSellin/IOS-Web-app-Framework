@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+
+<link rel="apple-touch-icon" href="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-check-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Custom Title">
+<style>
+#content{
+  display:none;
+}
+</style>
+</head>
+<body>
+<div id="addMii">
+<h1>Add to homescreen</h1>
+</div>
+
+
+<div id="content">
+<h1>App has been added to homescreen</h1>
+
+</div>
+<script type="text/javascript">
+if (window.navigator.standalone) {
+
+  document.getElementById("addMii").style.display = "none";
+  document.getElementById("content").style.display = "block";
+
+}
+</script>
+</body>
+</html>
